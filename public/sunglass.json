@@ -1,0 +1,34 @@
+ [
+      {
+        "id": 1,
+        "name": "Ray-Ban Aviator",
+        "price": "$150",
+        "image_url": "https://example.com/sunglasses/aviator.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Oakley Holbrook",
+        "price": "$120",
+        "image_url": "https://example.com/sunglasses/holbrook.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Prada Cat Eye",
+        "price": "$250",
+        "image_url": "https://example.com/sunglasses/cat_eye.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Tom Ford Wayfarer",
+        "price": "$300",
+        "image_url": "https://example.com/sunglasses/wayfarer.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Gucci Square Frame",
+        "price": "$400",
+        "image_url": "https://example.com/sunglasses/square_frame.jpg"
+      }
+    ]
+  
+  

@@ -4,7 +4,16 @@
   padding: 2rem;
   text-align: center;
 }
-
+.sunglass-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+}
+.watch-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
