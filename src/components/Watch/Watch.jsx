@@ -6,6 +6,7 @@ const Watch = ({watch}) => {
         <div className='watch'>
             <h4>Watch Name: {name} </h4>
             <p>Price: {price} </p>
+            
         </div>
     );
 };

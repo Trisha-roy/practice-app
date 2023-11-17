@@ -8,6 +8,9 @@ import Sunglass from './components/Sunglass/Sunglass';
 function App() {
 
   const [watches,setWatches]=useState([]);
+  
+  const [cart,setCart]=useState([])
+
   useEffect(()=>{
     fetch('watch.json')
     .then(res=>res.json())
@@ -21,6 +24,13 @@ function App() {
     .then(data=>setSunglass(data))
   },[])
    
+
+  const handleClick=sunglass=>{
+const newCart=[...cart,sunglass]
+setCart(newCart);aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+}
+
   return (
     <div>
       
@@ -33,14 +43,16 @@ function App() {
       </div>
 
       <h2>Sunglass Section</h2>
-
+      <h4>Cart: {cart.length}</h4>
       <div className='sunglass-container'>
+      
       {
-        sunglass.map(sun=><Sunglass key={sun.id} sun={sun}></Sunglass>)
+        sunglass.map(sun=><Sunglass 
+        key={sun.id} 
+        handleClick={handleClick}
+        sun={sun}></Sunglass>)
       }
       </div>
-      
-      
     </div>
   )
 }
